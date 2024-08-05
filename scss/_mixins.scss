@@ -1,0 +1,45 @@
+@mixin reset-list{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+@mixin reset-link{
+  display: inline-block;
+  text-decoration: none;
+}
+
+@mixin site-link{
+  display: inline-block;
+  text-decoration: none;
+  color:#FEFCF7;
+  padding: 15px 31px;
+  font-family: 'Fraunces 9pt';
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  background-color: #0E8784;
+  border-radius: 6px;
+}
+
+@mixin nav-link{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.9230769276618958px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+
+@mixin site-hover{
+  background-color: #66D2CF;
+  color: #FEFCF7;
+}
+@mixin site-active{
+  background-color: #E2DEDB;
+  color: #FEFCF7;
+}
+
+
+     

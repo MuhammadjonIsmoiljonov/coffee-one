@@ -1,0 +1,231 @@
+
+
+.collection{
+  margin-bottom: 200px;
+
+  background: url('../img/collection-1x.png') no-repeat center top 0px;
+  background-size: auto;
+  
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and ( -o-min-device-pixel-ratio: 2/1),
+  only screen and ( min-device-pixel-ratio: 2),
+  only screen and (           min-resolution:192dpi),
+  only screen and (         min-resolution: 2dppx)
+  {
+    body{
+    background-image: url('../img/collection-dekstop@2x.png');
+    
+  }
+}
+
+  &__list{
+    @include reset-list;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 126px 85px 0px;
+    
+    &__item:last-child{
+      margin-right: 0px;
+    }
+    &__item{
+      flex-grow: 1;
+      margin-right: 30px;
+      text-align: center;
+      width: calc((100% - 90px) / 4);
+
+
+      &-img{
+       display: block;
+       margin-bottom: 71px;
+      }
+
+      &__content{
+        max-width: 100%;
+        
+        
+        &-title{
+          margin: 0;
+          margin-bottom: 24px;
+          font-family: 'Fraunces 9pt';
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+          color: #333D4B;
+        }
+        &-description{
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          color: #333D4B;
+        }
+      }
+      }
+    }
+
+
+  }
+
+
+//TABLET
+@media only screen and (max-width: $tablet){
+  .collection{
+    margin-bottom: 144px;
+
+    background: url('../img/collection-tablet@1x.png') no-repeat center top 0px;
+    background-size: auto;
+    
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+    only screen and (min--moz-device-pixel-ratio: 2), 
+    only screen and (-o-min-device-pixel-ratio: 2/1), 
+    only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi), 
+    only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url('../img/collection-tablet@2x.png');
+    
+ }
+}
+    &__list{
+      @include reset-list;
+      flex-direction: column;
+      align-items: center;
+      padding: 58px 58px 0px;
+
+      &__item:last-child{
+        margin-right: 0px;
+      }
+  
+      &__item:last-child{
+        margin-bottom: 0;
+      }
+      &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 47px;
+        padding: 0;
+  
+        &-img{
+         display: block;
+         margin: 0px;
+         margin-right: 35px;
+        }
+
+        &__content{
+          max-width: 100%;
+          text-align: left;
+          
+        &-title{
+          margin: 0;
+          margin-bottom: 24px;
+          font-family: 'Fraunces 9pt', "Arial", sans-serif;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+          color: #333D4B;
+        }
+        &-description{
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #333D4B;
+        }
+      }
+    }
+  
+    }
+  }
+}
+
+
+
+//MOBILE
+@media only screen and (max-width: $mobile){
+  .collection{
+    margin-bottom: 120px;
+    background: url('../img/collection-mobile@1x.png') no-repeat center top 0px;
+    background-size: auto;
+    
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+    only screen and (min--moz-device-pixel-ratio: 2), 
+    only screen and (-o-min-device-pixel-ratio: 2/1), 
+    only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi), 
+    only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url('../img/collection-mobile@2x.png');
+    
+ }
+
+
+}
+&__list{
+  @include reset-list;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 47px 0px;
+      
+      &__item:last-child{
+        margin-right: 0px;
+      }
+      
+      &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+        margin-bottom: 48px;
+  
+        &-img{
+         display: block;
+         max-width: 200px;
+         height: 151px;
+         margin: 0px;
+         margin-bottom: 24px;
+        }
+
+        &__content{
+          max-width: 100%;
+          text-align: center;
+          
+        &-title{
+          margin: 0;
+          margin-bottom: 16px;
+          font-family: 'Fraunces 9pt', "Arial", sans-serif;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+          color: #333D4B;
+        }
+        &-description{
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #333D4B;
+        }
+      }
+    }
+  
+    }
+  }
+}
+
+

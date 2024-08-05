@@ -1,0 +1,176 @@
+
+.intro{
+  margin-bottom: 136px;
+  
+  
+  &__container{
+    background: url('../img/intro-img.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 117px 702px 116px 85px;  
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and (           min-resolution:192dpi),
+    only screen and (         min-resolution: 2dppx)
+     {
+     
+      background-image: url('../img/intro@2x.jpg');
+    
+    }
+
+  }
+  &__content{
+    max-width: 493px;
+    color: #FEFCF7;
+
+
+    &-description{
+      margin: 0;
+      padding: 0;
+      font-family: 'Fraunces 9pt';
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 72px;
+      margin-bottom: 32px;
+    }
+
+    &-text{
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 56px;
+    }
+
+    &-link{
+      @include site-link;
+    }
+    &-link:hover{
+      @include site-hover;
+    }
+    &-link:active{
+      @include site-active;
+    }
+
+  }
+}
+
+//TABLET
+@media only screen and (max-width: $tablet){
+  .intro{
+    margin-bottom: 144px;
+
+    &__container{
+      padding: 104px 233px 104px 58px;  
+      
+      
+      background-image: url('../img/intro-bg-@1x.jpg');
+      
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and ( -o-min-device-pixel-ratio: 2/1),
+      only screen and ( min-device-pixel-ratio: 2),
+      only screen and (           min-resolution:192dpi),
+      only screen and (         min-resolution: 2dppx)
+      {
+        
+        background-image: url('../img/intro-bg-@2x.jpg');
+        
+      }
+    }
+    
+    &__content{
+    max-width: 398px;
+
+    &-description{
+      margin-bottom: 24px;
+      font-family: 'Fraunces 9pt';
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 48px;
+    }
+    
+    &-text{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 40px;
+    }
+    
+    &-link{
+      @include site-link;
+    }
+    &-link:hover{
+      @include site-hover;
+    }
+    &-link:active{
+      @include site-active;
+    }
+  }
+}
+}
+
+
+
+//MOBILE
+@media only screen and (max-width: $mobile){
+  .intro{
+    margin-bottom: 120px;
+    &__container{
+      
+    padding: 100px 24px;
+    background-image: url('../img/intro-mobile@1x.jpg');
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and (           min-resolution:192dpi),
+    only screen and (         min-resolution: 2dppx)
+     {
+     
+      background-image: url('../img/intro-mobile@2x.jpg');
+    
+    }
+  }
+  
+  
+  &__content{
+    max-width: 100%;
+    text-align: center;
+    
+    &-description{
+      font-family:'Fraunces 9pt';
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 40px;
+      margin-bottom: 24px;
+      
+    }
+    
+    &-text{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 39px;
+    }
+    
+    &-link{
+      @include site-link;
+    }
+    &-link:hover{
+      @include site-hover;
+    }
+    &-link:active{
+      @include site-active;
+    }
+  }
+}
+
+}
